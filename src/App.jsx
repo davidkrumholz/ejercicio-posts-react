@@ -16,6 +16,7 @@ import {
 import {Routes, Route} from 'react-router-dom'
 import Home from "./Pages/home";
 import DetailPost from "./Pages/Detail";
+import CreatePost from "./Pages/create";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="post/:postId" element={<DetailPost/>}></Route>
+        <Route path="post/create" element={<CreatePost/>}></Route>
       </Routes>
     </>
   );
